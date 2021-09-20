@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="../css/master.css">
+    <!-- https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns?hl=en -->
+    <!-- https://www.internetingishard.com/html-and-css/responsive-images/ -->
+  </head>
+  <body>
+    <div class="page">
+      <div class="section menu">
+
+      </div>
+      <div class="section header">
+        <div class="photo">
+          <!-- RETINA OR NORMAL OPTIMALIZATION -->
+          <!-- <img src="../images/photo-small.png" alt="header"
+          srcset="../images/photo-big.png 2x,
+          ../images/photo-small.png 1x"
+          style="max-width: 500px"> -->
+
+          <!-- SCREEN WIDTH OPTIMALIZATION -->
+          <!-- <img src="../images/photo-small.jpg" alt="header"
+          srcset="../images/photo-big.jpg 2000w, ../images/photo-small.jpg 1000w"
+          sizes="(min-width: 960px) 960px, 100vw"> -->
+
+          <!-- ART DIRECTION OPTIMALIZATION -->
+          <picture>
+            <source media="(min-width: 401px)" srcset="../images/photo-big.jpg">
+            <source media="(max-width: 400px)" srcset="../images/photo-tall.jpg">
+            <img src="../images/photo-small.jpg" alt="header">
+          </picture>
+
+        </div>
+      </div>
+      <div class="section content">
+        <div class="illustration">
+          <img src="../images/illustration-big.png"
+          srcset="../images/illustration-small.png 1x, ../images/illustration-big.png 2x"
+          alt="illustration"
+          style="max-width: 500px">
+        </div>
+      </div>
+      <div class="section sign-up">
+        <img src="../images/sign-up.svg" alt="sign-up">
+      </div>
+      <div class="section feature-1">
+        <img src="../images/feature.svg" alt="feature-1">
+      </div>
+      <div class="section feature-2">
+        <img src="../images/feature.svg" alt="feature-2">
+      </div>
+      <div class="section feature-3">
+        <img src="../images/feature.svg" alt="feature-3">
+      </div>
+    </div>
+  </body>
+</html>
